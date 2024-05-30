@@ -2,8 +2,8 @@
 - name: install ansible
   hosts: all
   #become: yes
- # become_user: root
-#  become_method: sudo
+  become_user: root
+  become_method: sudo
 #  become_user: azureuser
  # become_pass: WBfGd4mBNTJyG5Qda4BV
   roles:

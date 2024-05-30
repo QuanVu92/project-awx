@@ -1,5 +1,5 @@
 - hosts: all
-#  become: true
+  become: true
 #  become_method: sudo
 #  become_user: azureuser
  # become_pass: WBfGd4mBNTJyG5Qda4BV

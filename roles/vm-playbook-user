@@ -1,9 +1,0 @@
----
-- name: install ansible
-  hosts: all
- # become: yes
- # become_user: root
-
-  roles:
-    - role: ansible-role-create-users
-    

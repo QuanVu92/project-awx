@@ -4,6 +4,3 @@
   
   roles:
     - role: ansible-role-promtail
-      vars:
- #       __install_loki: true
-        __install_promtail: false

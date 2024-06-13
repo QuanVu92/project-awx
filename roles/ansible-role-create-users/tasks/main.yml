@@ -1,9 +1,5 @@
 ---
-- name: Ensure the user group exists
-  ansible.builtin.group:
-    name: icom
-    state: present
-    
+
 - name: set_fact - add all to group_names
   set_fact:
     create_users_group_names: "{{ group_names|default([]) + ['all'] }}"

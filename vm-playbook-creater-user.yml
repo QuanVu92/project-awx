@@ -6,10 +6,10 @@
     
   vars:
     users:
-      - username: quanvv09
+      - username: quanvv010
         ssh_key: |
           ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCX1YVN4udyuCGshFxfK6peGzexlUmbDLer/fUtELmg4IXc+J/bzK/ZszNvXRuCNyTQ0o0ZKVUwORGUwQ+VmYZ6IorGXdSGrTmgTBmx45v/TkZiJDR9IVeEKroy/M1k4rMFTQ7Nr5DdMDrk55PhMT1vCD1uOZ71EeyTKoJUrSyYhe/Y/MNQcfCrP9VZzkyU5zIgMCblgPEn7JgzVTyXmjArrFg/AwFBSRjaXS5WMl6yNNrAwXmlo2XABVxhySWyXt8lomOR5Ka63M9xZs1KEdvk7Hqi/etNsFb1Ce6IlCHig8CaB2GKWE5mAmvB/o/QUTmUa/9dgNoyEol85ShKLnEV rsa-key-quan.vuvan
-        comment: quanvv09
+        comment: quanvv010
         shell: /bin/bash
         use_sudo: no
         use_sudo_nopass: no

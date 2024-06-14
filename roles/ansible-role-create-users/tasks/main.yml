@@ -67,6 +67,13 @@
   loop_control:
     label: "username: {{ item.username }}, user_state: {{ item.user_state }}, password: {{ 'True' if item.password is defined else 'False' }}, update_password: {{ item.update_password if item.update_password is defined else default_update_password }}, primarygroup: {{ item.primarygroup if item.primarygroup is defined else ''}}, groups: {{ item.groups if item.groups is defined else ''}}, servers: {{ item.servers if item.servers is defined else '' }}, group_names: {{ create_users_group_names }}" # noqa 204
 
+- name: Remove user from all current groups except primary group
+  command: usermod -G '' {{ item.username }}
+  when: item.user_state == 'present' and item.servers | intersect(create_users_group_names)
+  loop: '{{ users }}'
+  loop_control:
+    label: "username: {{ item.username }}"
+
 - name: Add users to group icom
   user:
     name: "{{ item.username }}"
